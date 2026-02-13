@@ -1,0 +1,21 @@
+---
+import '../../generated/fonts.css';
+import '../site-components/global.css';
+import '../styles/global.css';
+
+const { pageClass = '' } = Astro.props;
+---
+
+<html lang="en" class={pageClass}>
+<head>
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="/favicon.ico" />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>Daily Test Simulator</title>
+</head>
+<!-- Dark mode class injection point - will be replaced with `dark` class based on your site palette -->
+<body class="__DARK_MODE_CLASS__">
+<slot />
+</body>
+</html>

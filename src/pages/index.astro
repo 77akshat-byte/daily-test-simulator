@@ -1,0 +1,10 @@
+---
+import MainLayout from '../layouts/main.astro';
+import { TestApp } from '../components/TestApp';
+---
+
+<MainLayout>
+<TestApp client:only="react" />
+</MainLayout>
+
+

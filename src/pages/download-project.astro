@@ -1,0 +1,74 @@
+---
+// Download page for project files
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Project Files</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #0066ff;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .download-btn:hover {
+            background: #0052cc;
+        }
+        .steps {
+            text-align: left;
+            margin-top: 40px;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .steps ol {
+            margin: 10px 0;
+        }
+        .steps li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>📦 Download Your Project</h1>
+    <p>Click the button below to download all project files</p>
+    
+    <a href="/project-code.tar.gz" download class="download-btn">
+        ⬇️ Download Project Files
+    </a>
+
+    <div class="steps">
+        <h3>Next Steps:</h3>
+        <ol>
+            <li><strong>Extract the downloaded file</strong> (double-click on Mac)</li>
+            <li><strong>Open Terminal</strong> and navigate to the folder:
+                <br><code>cd ~/Downloads/app</code>
+            </li>
+            <li><strong>Make setup script executable:</strong>
+                <br><code>chmod +x SETUP-GITHUB.sh</code>
+            </li>
+            <li><strong>Run the script:</strong>
+                <br><code>./SETUP-GITHUB.sh</code>
+            </li>
+            <li><strong>Enter your GitHub token</strong> when prompted</li>
+            <li><strong>Go to Cloudflare Dashboard</strong> and connect to GitHub</li>
+        </ol>
+    </div>
+</body>
+</html>
